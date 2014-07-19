@@ -33,7 +33,7 @@ function load1() {
 }
 
 function load2() {
-    document.getElementById("progress").innerHTML = "<progress max=100 vaule=23></progress><br><H3>Waiting Response...</h3>";
+    document.getElementById("progress").innerHTML = "<progress max=100 vaule=23></progress><br><H3>Getting Link...</h3>";
     setTimeout(function () {
         load3();
     }, 2576);
@@ -41,34 +41,19 @@ function load2() {
 }
 
 function load3() {
-    document.getElementById("progress").innerHTML = "<progress max=100 vaule=47></progress><br><H3>Link Reviving...<progress max=100 vaule=68></progress></h3>";
-    setTimeout(function () {
-        load4();
-    }, 7576);
-    return false;
-}
-
-function load4() {
-    document.getElementById("progress").innerHTML = "<progress max=100 vaule=47></progress><br><H3>Decrypting...</h3>";
-    setTimeout(function () {
-        load5();
-    }, 9576);
-    return false;
-}
-
-function load5() {
     document.getElementById("progress").innerHTML = "<H1>Done.</h1>";
     if (thepage == "unselected") {
         document.getElementById("link").innerHTML = "<H5>Link not Specified.</h5>";
     }
-    if (thepage == "home") {
-        document.getElementById("link").innerHTML = "<a href=http://thesmokinggnu.us>Go!</a>";
+    if (thepage == 1) {
+        document.getElementById("link").innerHTML = "<a href=http://thesmokinggnu.us>Go!- Home</a>";
     }
 
     return false;
 }
 
 function selhome() {
-    thepage = home;
+    thepage = 1;
+	document.getElementById("Selected").innerHTML = "<H3>My Main Page- selected</h3>";
     return false;
 }
