@@ -17,7 +17,7 @@ function showpage() {
 function loader() {
     document.getElementById("progress").innerHTML = "<progress max=100 vaule=1></progress><br><H3>Loading...</h3>";
     setTimeout(function () {
-        load1()
+        load1();
     }, 3000);
 
 
@@ -27,7 +27,7 @@ function loader() {
 function load1() {
     document.getElementById("progress").innerHTML = "<progress max=100 vaule=6></progress><br><H3>Sending request...</h3>";
     setTimeout(function () {
-        load2()
+        load2();
     }, 5000);
     return false;
 }
@@ -35,7 +35,7 @@ function load1() {
 function load2() {
     document.getElementById("progress").innerHTML = "<progress max=100 vaule=23></progress><br><H3>Waiting Response...</h3>";
     setTimeout(function () {
-        load3()
+        load3();
     }, 2576);
     return false;
 }
@@ -43,7 +43,7 @@ function load2() {
 function load3() {
     document.getElementById("progress").innerHTML = "<progress max=100 vaule=47></progress><br><H3>Link Reviving...<progress max=100 vaule=68></progress></h3>";
     setTimeout(function () {
-        load4()
+        load4();
     }, 7576);
     return false;
 }
@@ -51,7 +51,7 @@ function load3() {
 function load4() {
     document.getElementById("progress").innerHTML = "<progress max=100 vaule=47></progress><br><H3>Decrypting...</h3>";
     setTimeout(function () {
-        load5()
+        load5();
     }, 9576);
     return false;
 }
@@ -70,5 +70,5 @@ function load5() {
 
 function selhome() {
     thepage = home;
-    return false
+    return false;
 }
